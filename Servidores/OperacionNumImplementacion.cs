@@ -8,16 +8,17 @@ namespace verexponente.Servidores
 {
     internal class OperacionNumImplementacion : OperacionNumInterfaz
     {
-        public void Operacion(int n1, int n2)
+        public void Operacion(int n1)
         {
-            Console.WriteLine("Los numeros dados te dara si el primero es cuadrado o no del segundo numero \n");
-           if(n1== n2*n2 )
+            int n2 = (int)Math.Sqrt(n1);//para tener una raiz se convierte en el tipo de numero y se pone esa expresion y dentro el numero que quiero hacerle la raiz.
+            if (n1 == n2 * n2)
             {
-                Console.WriteLine("Este primer numero: " + n1 + " es el cuadrado del segundo numero: " + n2);
+                Console.WriteLine("El numero dado si tiene raiz entera. Y es la siguiente:");
+                Console.WriteLine(n1+"="+n2+"*"+ n2);
             }
             else
             {
-                Console.WriteLine("Este primer numero: " + n1 + " no es el cuadrado del segundo numero: " + n2);
+                Console.WriteLine("El numero dado no tiene raiz entera.");
             }
         }
     }

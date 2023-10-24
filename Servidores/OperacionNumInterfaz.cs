@@ -8,6 +8,6 @@ namespace verexponente.Servidores
 {
     internal interface OperacionNumInterfaz
     {
-        public void Operacion(int n1, int n2);
+        public void Operacion(int n1);
     }
 }
